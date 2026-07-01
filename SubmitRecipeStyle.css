@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+	background: url('Images/food3.jpg') no-repeat center center fixed;
+	background-size: cover;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	min-height: 100vh;
+}
+
+.container {
+	background-color: rgba(255, 255, 255, 0.95);
+	border-radius: 12px;
+	box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+	padding: 40px;
+	width: 90%;
+	max-width: 600px;
+}
+
+h1 {
+	text-align: center;
+	margin-bottom: 30px;
+	color: #333;
+	font-weight: 600;
+}
+
+form {
+	display: flex;
+	flex-direction: column;
+	gap: 15px;
+}
+
+input[type="text"],
+input[type="file"],
+textarea {
+	width: 100%;
+	padding: 12px 15px;
+	border: 1px solid #ccc;
+	border-radius: 8px;
+	font-size: 16px;
+	transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+	border-color: #e1ae61;
+	outline: none;
+}
+
+textarea {
+	resize: vertical;
+	min-height: 120px;
+}
+
+input[type="submit"] {
+	background-color: #e1ae61;
+	color: white;
+	border: none;
+	padding: 12px;
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 8px;
+	cursor: pointer;
+	transition: background-color 0.3s ease;
+}
+
+input[type="submit"]:hover {
+	background-color: #a65a1a;
+}
+
+label {
+	font-size: 14px;
+	color: #555;
+	margin-top: 10px;
+}

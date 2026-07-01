@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+body {
+  background: #fffaf5;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #a65a1a;
+  padding: 40px 50px;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: white;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Dropdown Styles */
+.dropdown {
+  position: relative;
+}
+
+.dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: #6d3200;
+  display: none;
+  list-style: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+.dropdown-menu li a {
+  padding: 0.8rem 1rem;
+  display: block;
+  color: white;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/*Main Content*/
+.about-container{
+    margin: 20px;
+}
+
+.content {
+    max-width: 1200px;
+    margin: 20px auto;
+    margin-top: 120px;
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.philosophy, .values, .team-section {
+    margin-bottom: 30px;
+}
+
+.philosophy h3, .values h3, .team-section h3 {
+    font-size: 20px;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.philosophy p, .values p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+}
+
+.values strong {
+    color: #007bff;
+}
+
+.team-header{
+    margin-left: 20px;
+}
+
+.team-section h2 {
+    font-size: 24px;
+    color: #333;
+    text-align: center;
+}
+
+.team {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 0px 20px;
+}
+
+.member-card {
+    margin-top: 30px;
+    flex: 1 1 calc(25% - 20px);
+    background: #ffffff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: rgba(14, 30, 37, 0.12) 0px 2px 4px 0px, rgba(14, 30, 37, 0.32) 0px 2px 16px 0px;
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.member-card:hover {
+    transform: translateY(-5px);
+    box-shadow: rgba(238, 192, 123, 1) 0px 0px 0px 3px;
+}
+
+.member-card img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
+
+.member-card h3 {
+    font-size: 18px;
+    margin: 10px 0 5px;
+    color: #222;
+}
+
+.member-card .role {
+    font-size: 14px;
+    color: #777;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.member-card .description {
+    font-size: 14px;
+    color: #555;
+    margin-bottom: 15px;
+}
+
+.read-more {
+    display: inline-block;
+    padding: 8px 16px;
+    background-color: #e1ae61;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 14px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #422308;
+}
+
+/* Footer */
+footer {
+  margin: 20px -20px -20px -20px;
+  background: #6d3200;
+  color: white;
+  padding: 2rem 1rem;
+  text-align: center;
+}
+
+.footer-content {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-content a {
+  color: #ffb6b6;
+  text-decoration: none;
+  margin: 0 0.5rem;
+}
+
+.footer-content a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 20px;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 0.5rem;
+    margin-top: 1rem;
+  }
+
+  .logo {
+    font-size: 1.3rem;
+  }
+
+  .content {
+    margin: 20px 10px;
+    padding: 15px;
+  }
+
+  .philosophy h3, .values h3, .team-section h3 {
+    font-size: 18px;
+  }
+
+  .philosophy p, .values p {
+    font-size: 15px;
+  }
+
+  .team {
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+  }
+
+  .member-card {
+    flex: 1 1 100%;
+    max-width: 90%;
+  }
+
+  .member-card img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .read-more {
+    padding: 6px 12px;
+    font-size: 13px;
+  }
+
+  footer {
+    padding: 1.5rem 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+
+  .content {
+    padding: 10px;
+    margin: 10px;
+  }
+
+  .philosophy h3, .values h3, .team-section h3 {
+    font-size: 16px;
+  }
+
+  .philosophy p, .values p {
+    font-size: 14px;
+  }
+
+  .team-section h2 {
+    font-size: 20px;
+  }
+
+  .member-card h3 {
+    font-size: 16px;
+  }
+
+  .member-card .role, .member-card .description {
+    font-size: 13px;
+  }
+
+  .read-more {
+    font-size: 12px;
+  }
+
+  .member-card img {
+    width: 90px;
+    height: 90px;
+  }
+}
