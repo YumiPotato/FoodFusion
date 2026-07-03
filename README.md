@@ -49,6 +49,8 @@ FoodFusion is a PHP and MySQL web application for a cooking community. It lets u
 - Download scripts for images, PDFs, and videos.
 - Organized PHP and CSS folders with updated relative paths.
 
+This website was developed between February 2025 and April 2025.
+
 ## Database
 
 The project connects to a MySQL database named `FoodFusionDB` using:
