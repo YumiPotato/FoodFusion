@@ -80,9 +80,14 @@
 
         for ($i=0; $i < $numRowsResult; $i++) {
         	$result = mysqli_fetch_assoc($teamResult);
+        	$imagePath = $result['Image'];
+
+        	if (strpos($imagePath, 'images/') === 0 || strpos($imagePath, 'Images/') === 0) {
+        		$imagePath = '../' . $imagePath;
+        	}
 
         	echo '<div class="member-card">';
-	        echo '<img src="' . $result['Image'] . '" alt="' . htmlspecialchars($result['Name']) . '">';
+	        echo '<img src="' . htmlspecialchars($imagePath) . '" alt="' . htmlspecialchars($result['Name']) . '">';
 	        echo '<h3>' . htmlspecialchars($result['Name']) . '</h3>';
 	        echo '<p class="role">' . htmlspecialchars($result['Role']) . '</p>';
 	        echo '<p class="description">' . htmlspecialchars($result['Description']) . '</p>';
