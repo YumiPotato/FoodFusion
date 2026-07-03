@@ -80,5 +80,5 @@ The setup file `php/DatabaseTables.php` creates these tables:
 Example local URL:
 
 ```text
-http://localhost/209781_YUN%20AEINDARY%20OO_BEWD_GA_PROGRAM/
+http://localhost/FoodFusion/
 ```
