@@ -1,4 +1,4 @@
-﻿# FoodFusion
+﻿# FoodFusion (February 2025 - April 2025)
 
 FoodFusion is a PHP and MySQL web application for a cooking community. It lets users register, log in, browse recipes, view team information, send contact messages, submit recipes, and access downloadable culinary and educational resources.
 
@@ -48,8 +48,6 @@ FoodFusion is a PHP and MySQL web application for a cooking community. It lets u
 - Team member display from the database.
 - Download scripts for images, PDFs, and videos.
 - Organized PHP and CSS folders with updated relative paths.
-
-This website was developed between February 2025 and April 2025.
 
 ## Database
 
