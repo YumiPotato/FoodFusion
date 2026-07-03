@@ -84,9 +84,3 @@ Example local URL:
 ```text
 http://localhost/209781_YUN%20AEINDARY%20OO_BEWD_GA_PROGRAM/
 ```
-
-## Notes
-
-- The PHP files are now inside the `php/` folder.
-- The CSS files are now inside the `css/` folder.
-- Asset paths use `../` from PHP and CSS files to reach the root-level image and download folders.
